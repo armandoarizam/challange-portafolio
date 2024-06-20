@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Xanh Mono", monospace;
+    color: black;
+}
+
+body {
+    width: 100%;
+}
+
+img{
+    display: flex;
+    width: 100px;
+    height: auto;
+    position: absolute;
+    margin-left: 150px;
+    border-radius: 32px;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    margin-left: 80px;
+}
+
+.menu {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 700px;
+}
+
+.decoracion {
+    background: lightgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100px;
+    height: 3330px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.box-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    margin-left: 110px;
+    margin-top: 180px;
+}
+
+/* Estilos para el botón "Añadir Habilidad" */
+#addSkill {
+    background-color: lightgreen;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addSkill:hover {
+    background-color: green;
+}
+
+h1, h2, p, ol, li, ul, td, tr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    list-style: none; 
+}
+
+table {
+    width: 50%;
+    margin: 5px;
+    border-collapse: collapse;
+    padding: 0;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+/* Estilos para el formulario de contacto */
+.formulario-contacto {
+    margin-top: 2950px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #f9f9f9;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.formulario-contacto h2 {
+    margin-bottom: 10px;
+}
+
+.formulario-contacto label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario-contacto button {
+    background-color: lightgreen;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+    background-color: green;
+}
+
+/* Estilos para el botón "Ver Proyectos" */
+#btnVerProyectos {
+    background-color: lightgreen;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btnVerProyectos:hover {
+    background-color: #ccc;
+}
+
+#btnCalificar {
+    margin-top: 3250px;
+    padding: 20px;
+    border: 1px solid lightgreen;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+    background-color: lightgreen;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#btnCalificar:hover {
+    background-color: #ccc;
+}
+

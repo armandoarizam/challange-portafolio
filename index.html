@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <title>Hoja de Vida JS</title>
+</head>
+<body>
+    <header> 
+        <img src="/img/perfil.jpeg" alt="foto-perfil">     
+        <nav>
+            <h1>Armando Ariza Martínez</h1>
+            <h2>Desarrollador Web Full Stack</h2>
+    
+            <div class="menu">
+                <a href="#perfil">Perfíl</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#formacion">Formación</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto" id="btnContactar">Contactar</a>            
+            </div>            
+        </nav>        
+    </header>
+
+    <main>
+        <section class="decoracion">
+            <div class="decoracion"></div>
+        </section> 
+
+        <section class="box-1">            
+            <div class="information">                
+                <h2>
+                    <a href="#perfil">Perfíl</a>
+                </h2>
+                <ul>
+                    <p>Desarrollador Web Junior y técnico en Sistemas apasionado por crear y desarrollar sitios y
+                    aplicaciones web atractivas y funcionales. Mi experiencia abarca las tecnologías HTML, CSS,
+                    Javascript, Node & Npm, Express, Mongo DB, React y Git. Lo que me permite dar vida a ideas
+                    creativas y proporcionar experiencias digitales excepcionales. Tengo una mentalidad orientada al
+                    servicio y creo en el liderazgo a través del trabajo en equipo.</p>
+                </ul>
+
+                <h2>
+                     <!-- Enlace que activa el saludo personalizado -->
+                     <a href="#experiencia" onclick="saludoPersonalizado()">Experiencia laboral</a>
+
+
+                </h2>
+                <ul>
+                    <ol>Dic 2022 – Feb. 2023.</ol>
+                    <ol>Empresa: <strong>SGS Colombia Holding SAS</strong></ol>
+                    <ol>Cargo: <strong>Support TeleSales</strong></ol>
+                    <ol>Campaña de GoDaddy</ol>
+                    <ol>Soporte técnico en tecnologías WordPress y Cpanel en instalación, recuperación de sitios web, copias 
+                    de seguridad, seguridad web, migración web, certificados SSL, construcción web y venta cruzada de 
+                    dominios, hosting, vps.</ol>
+                </ul>
+                
+                <br>
+
+                <h2>
+                    <a href="#proyectos">Proyectos</a>
+                </h2>
+
+                <ul>
+                    <ol>Abril 2023- Nov 2023</ol>
+                    <ol>Empresa:<strong>Autónomo</strong></ol>
+                    <ol>Cargo: <strong>Desarrollador Web Full Stack Junior</strong></ol>
+                    <ol>Realizar una hoja de vida personal con el lenguaje HTML y CSS para dar estilos haciendo uso de enlaces, tablas y listas.</ol>               
+                    <ol>Elaborar una lista de contactos en JavaScript y Node.js,  con el uso de ciclos y funciones.</ol>
+                    <ol>Generar una lista de tareas con servidor express</ol>
+                    <ol>Ejecutar una lista de tareas en conexión con la base de datos Mongo DB.</ol>
+                    <ol>Construir una lista de tareas en tecnologías React.</ol> 
+                </ul>
+                
+                <br>
+
+                <h2>
+                    <a href="#formacion">Formación</a>
+                </h2>
+
+                <ol>Año:<strong>2022</strong></ol>
+                <ol>Instituto:<strong>Politécnico Latinoamericano - IPL</strong></ol>
+                <ol>Título:<strong>Técnico Laboral en Sistemas</strong></ol>
+                <br>
+                <ol>Año:<strong>2022</strong></ol>
+                <ol>Instituto:<strong>Centro de Capacitación Bolívar</strong></ol>
+                <ol>Título:<strong>Técnico Laboral en Asistencia Administrativa</strong></ol>
+                <br>
+                <ol>Año:<strong>2024 - En curso</strong></ol>
+                <ol>Instituto:<strong>Centro Iberoamericano de Estudio - CIES</strong></ol>
+                <ol>Título:<strong>Técnico Laboral en Diseño Gráfico</strong></ol>
+
+                <h2>
+                    Formación Complementaria
+                </h2>
+
+                <ol>Año:<strong>2024 - En curso</strong></ol>
+                <ol>Instituto:<strong>Coursera</strong></ol>
+                <ol>Curso:<strong>HTML, CSS y JavaScript para desarrolladores web</strong></ol>
+                <br>
+                <ol>Año:<strong>2024 - En curso</strong></ol>
+                <ol>Instituto:<strong>One - Oracle Next Education</strong></ol>
+                <ol>Curso:<strong>Especialización en Front-End</strong></ol>
+                <br>
+                <ol>Año:<strong>2024 - En curso</strong></ol>
+                <ol>Instituto:<strong>Crehana</strong></ol>
+                <ol>Curso:<strong>Desarrollo Front End</strong></ol>
+                <br>
+                <ol>Año:<strong>2024 - En curso</strong></ol>
+                <ol>Instituto:<strong>Diplomados Online</strong></ol>
+                <ol>Curso:<strong>Especialización en Diseño Digital y Multimedia</strong></ol>
+                <br>
+                <ol>Año:<strong>2024 - En curso</strong></ol>
+                <ol>Instituto:<strong>Neetwork Business School</strong></ol>
+                <ol>Curso:<strong>Master en Marketing Digital</strong></ol>
+
+                <h2>
+                    <a href="#habilidades">Habilidades</a>
+                </h2>
+
+                <ul id="skillsList">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                    <li>Node.js</li>
+                    <li>Npm</li>
+                    <li>MongoDB</li>
+                    <li>React</li>
+                </ul>
+                
+                <button id="addSkill">Añadir Habilidad</button> <!-- Botón para añadir habilidades -->
+
+                
+                <h2>Habilidades Técnicas de interés</h2>
+
+                <table>                    
+                    <tr>
+                        <td>Python</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                    </tr>
+                    <tr>
+                        <td>Angular</td>
+                    </tr>
+                    <tr>
+                        <td>Diseño UX/UI</td>
+                    </tr>
+                    <tr>
+                        <td>Php</td>
+                    </tr>
+                    <tr>
+                        <td>AWS</td>
+                    </tr>
+                    <tr>
+                        <td>BootStrap</td>
+                    </tr>
+                    <tr>
+                        <td>Unity</td>
+                    </tr>
+                    <tr>
+                        <td>MySQL / SQL</td>
+                    </tr>
+                    <tr>
+                        <td>Jquery</td>
+                    </tr>
+                    <tr>
+                        <td>Android</td>
+                    </tr>
+                    <tr>
+                        <td>IOS</td>
+                    </tr>
+                </table>  
+                
+                <h2>Certificaciones</h2>
+
+                <ul id="listaCertificaciones"></ul>
+
+                <ul id="listaProyectosAnteriores"></ul>
+                <button id="btnVerProyectos">Ver Proyectos Anteriores</button>
+
+
+            </div>            
+        </section>
+        
+    </main>
+
+        <form id="formularioContacto" class="formulario-contacto">
+            <h2>Contacto</h2>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        
+        <button id="btnCalificar">Calificar Hoja de Vida</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
